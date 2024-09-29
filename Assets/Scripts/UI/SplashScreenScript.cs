@@ -42,7 +42,7 @@ namespace UI
 
             if (t >= 4)
             {
-                SceneManager.LoadScene(0);
+                SceneManager.LoadScene(3);
             }
         }
     
