@@ -25,7 +25,7 @@ namespace DefaultNamespace
             //layout.PrintLayout();
 
             CreateRooms();
-            //CreateDoors(); It don't work!
+            CreateDoors(); // It Might work; It don't work!
         }
         
         
@@ -58,12 +58,22 @@ namespace DefaultNamespace
                 float rotation = 0;
                 float x = doorPos.x % 50;
                 float z = doorPos.z % 50;
-                if (x > 0)
+                // I belive this is causing an issue with the doors being rotated 
+                // when they shouldnt be
+                if (x > 0) 
                 {
                     rotation = 90;
                 }
                 
-                Instantiate(doorObj, doorPos, Quaternion.Euler(0, rotation, 0), doorParent);
+                // Adjusts doorPos to fit in frames
+                Vector3 adjustedDoorPos = new (
+                    rotation == 0 ? doorPos.x +2.5f : doorPos.x, 
+                    doorPos.y - 3,  
+                    rotation == 0 ? doorPos.z : doorPos.z - 2.5f 
+                );
+
+
+                Instantiate(doorObj, adjustedDoorPos, Quaternion.Euler(0, rotation, 0), doorParent);
             }
         }
     }

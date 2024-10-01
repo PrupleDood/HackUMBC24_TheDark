@@ -81,6 +81,8 @@ public class DungeonLayout
                 count--;
                 Vector3 doorPos = spaceContactPoints[Random.Range(0, spaceContactPoints.Count - 1)];
 
+                doorPos -= Vector3.zero;
+
                 doors.Add(doorPos);
                 linkedSpaces.Add(LinkedSpaces(doorPos));
             }

@@ -12,8 +12,8 @@ GameObject:
   - component: {fileID: 2695285998609347359}
   - component: {fileID: 5223917410993550622}
   - component: {fileID: 356650880326360640}
-  - component: {fileID: 3851881021256038933}
   - component: {fileID: 969956437393918807}
+  - component: {fileID: 7735887070941980311}
   m_Layer: 0
   m_Name: door
   m_TagString: Door
@@ -29,8 +29,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 516833547760835413}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0, y: 0, z: 0}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -2, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -107,19 +107,6 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
---- !u!114 &3851881021256038933
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 516833547760835413}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3d962431ff23ffb49b854af8f6c0e3ce, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  isTriggered: 0
 --- !u!64 &969956437393918807
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -142,6 +129,19 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 5779197439840542771, guid: a19582df975417548a47feede0d2fa4b, type: 3}
+--- !u!114 &7735887070941980311
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 516833547760835413}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3d962431ff23ffb49b854af8f6c0e3ce, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isTriggered: 0
 --- !u!1 &1575406203580618026
 GameObject:
   m_ObjectHideFlags: 0
@@ -167,7 +167,7 @@ Transform:
   m_GameObject: {fileID: 1575406203580618026}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:

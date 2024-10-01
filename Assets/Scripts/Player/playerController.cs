@@ -41,8 +41,6 @@ public class PlayerMovement : MonoBehaviour
  
     public bool canMove = true;
 
-    public float maxTriggerDistance;
-
     CharacterController characterController;
     void Start()
     {
@@ -104,46 +102,5 @@ public class PlayerMovement : MonoBehaviour
  
         #endregion
 
-        # region Handles Doors
-        
-        if (Input.GetKeyDown(KeyCode.E)) {
-            CheckForDoor();
-        }
-
-        #endregion
-
-    }
-
-    public void CheckForDoor() {
-
-        Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
-        RaycastHit hit;
-
-        if (Physics.Raycast(ray, out hit)) {
-            if (!hit.collider.CompareTag("Door")) {
-                return;
-            }
-            
-            else if (hit.distance > maxTriggerDistance) {
-                return;
-            }
-
-            GameObject door = hit.collider.gameObject;
-
-            doorAnimator doorScript = door.GetComponentInChildren<doorAnimator>();
-
-            if (doorScript.isTriggered) {
-                doorScript.isTriggered = false;
-            
-                doorScript.TriggerClose();
-            }
-
-            else {
-                doorScript.isTriggered = true;
-
-                doorScript.TriggerOpen();
-            }
-            
-        }
     }
 }

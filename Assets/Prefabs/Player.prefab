@@ -9870,6 +9870,7 @@ GameObject:
   - component: {fileID: 8585425793163045332}
   - component: {fileID: 6187983418317404692}
   - component: {fileID: 66852111751779729}
+  - component: {fileID: 4045316727621813122}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -9941,7 +9942,52 @@ MonoBehaviour:
   lookSpeed: 2
   lookXLimit: 45
   canMove: 1
+--- !u!114 &4045316727621813122
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7475185662455301941}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bf50acd119dc921438e336023164d701, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
   maxTriggerDistance: 2.5
+--- !u!1 &8745934752557774271
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: c396139509b39334fa65465b008dd705, type: 3}
+  m_PrefabInstance: {fileID: 8475392419209021678}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8220228193668525829}
+  m_Layer: 0
+  m_Name: 'torch (Missing Prefab with guid: c396139509b39334fa65465b008dd705)'
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &8220228193668525829
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: c396139509b39334fa65465b008dd705, type: 3}
+  m_PrefabInstance: {fileID: 8475392419209021678}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8745934752557774271}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 1, y: 0, z: 1}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 4264873608312351152}
+  - {fileID: 4346319550236658893}
+  m_Father: {fileID: 8585425793163045332}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &8475392419209021678
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -10028,14 +10074,9 @@ PrefabInstance:
     m_AddedGameObjects:
     - targetCorrespondingSourceObject: {fileID: -8679921383154817045, guid: c396139509b39334fa65465b008dd705, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 4346319550236658893}
+      addedObject: {fileID: 4264873608312351152}
     - targetCorrespondingSourceObject: {fileID: -8679921383154817045, guid: c396139509b39334fa65465b008dd705, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 4264873608312351152}
+      addedObject: {fileID: 4346319550236658893}
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c396139509b39334fa65465b008dd705, type: 3}
---- !u!4 &8220228193668525829 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: c396139509b39334fa65465b008dd705, type: 3}
-  m_PrefabInstance: {fileID: 8475392419209021678}
-  m_PrefabAsset: {fileID: 0}
